@@ -30,7 +30,6 @@ a:hover
     margin: auto;
     white-space: nowrap;
     /*border: 1px solid red;*/
-    overflow: hidden;
 }
 .logo, .trade, .header-contacts__title, .header-phones, .seo__main, .package__item, .package__number, .package__about, .main, .news-item, .order, .footer__item, .footer__nav-item
 {
@@ -251,6 +250,7 @@ a:hover
     font-size: 24px;
     padding: 17px 0 0 27px;
     vertical-align: top;
+    position: relative;
 }
 .package__number:after
 {
@@ -259,7 +259,9 @@ a:hover
     height: 58px;
     border: 1px solid #0174b7;
     border-radius: 50%;
-    margin: -46px 0 0 -22px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
     display: block;
 }
 .package__about
@@ -503,7 +505,9 @@ a:hover
     width: 30px;
     height: 30px;
     background: url(../img/select-arrow.png);
-    margin: -30px 0 0 255px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .order__submit
 {
